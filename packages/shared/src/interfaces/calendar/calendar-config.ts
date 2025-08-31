@@ -21,12 +21,19 @@ import { Language } from '../../types/translations/language.translations'
 import { IANATimezone } from '../../utils/stateless/time/tzdb'
 import TimezoneSelectPlugin from '../timezone-select/timezone-select-plugin'
 
+export type EventGroupingOptions = {
+  enabled: boolean
+  slotDurationMinutes: number  // e.g., 60 for 1-hour slots
+  threshold: number            // e.g., maximum of 3 concurrent events displayed
+}
+
 export type WeekOptions = {
   gridHeight: number
   nDays: number
   eventWidth: number
   timeAxisFormatOptions: Intl.DateTimeFormatOptions
   eventOverlap: boolean
+  eventGrouping?: EventGroupingOptions
 }
 
 export type MonthGridOptions = {
@@ -86,7 +93,7 @@ export default interface CalendarConfigInternal extends Config {
 }
 
 interface CalendarDatePickerConfigExternal
-  extends Omit<DatePickerConfigExternal, 'listeners' | 'placement'> {}
+  extends Omit<DatePickerConfigExternal, 'listeners' | 'placement'> { }
 
 interface ReducedCalendarConfigInternal
   extends Omit<
@@ -109,7 +116,7 @@ interface ReducedCalendarConfigInternal
     | 'showWeekNumbers'
     | 'direction'
     | 'timezone'
-  > {}
+  > { }
 
 export interface CalendarConfigExternal
   extends Partial<ReducedCalendarConfigInternal> {

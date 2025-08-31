@@ -45,6 +45,10 @@ class CalendarControlsPluginImpl implements CalendarControlsPlugin {
     )
   }
 
+  setEventGroupingEnabled(isEnabled: boolean) {
+    this.$app.calendarState.setIsEventGroupingEnabled(isEnabled)
+  }
+
   setFirstDayOfWeek(firstDayOfWeek: WeekDay) {
     this.$app.config.firstDayOfWeek.value = firstDayOfWeek
   }

@@ -2,6 +2,9 @@ import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calenda
 import { useContext, useState, useMemo } from 'preact/hooks'
 import { AppContext } from '../../utils/stateful/app-context'
 import TimeGridEvent from './time-grid-event'
+import TimeSlotEvent, { SlotData } from './time-slot-event'
+import { generateSlotEvents } from '../../utils/stateless/events/filter-events-in-timeslots'
+import { filterEvents } from '../../utils/stateless/events/filter-events-in-timeslots'
 import { sortEventsByStartAndEnd } from '../../utils/stateless/events/sort-by-start-date'
 import { handleEventConcurrency } from '../../utils/stateless/events/event-concurrency'
 import { timeStringFromTimePoints } from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
@@ -60,10 +63,27 @@ export default function TimeGridDay({
     end: dayEndDateTime,
   }
 
+  const [slotEvents, setSlotEvents] = useState<SlotData[]>([]);
+
   const eventsWithConcurrency = useMemo(() => {
     const sortedEvents = calendarEvents.sort(sortEventsByStartAndEnd)
-    return handleEventConcurrency(sortedEvents)
-  }, [calendarEvents])
+
+    if ($app.calendarState.isEventGroupingEnabled.value) {
+      // filter events and add _isVisible to them
+      filterEvents(sortedEvents, $app.config.weekOptions.value.eventGrouping?.threshold || 2);
+      
+      // generate slots based on the filtered events
+      const newSlotEvents = generateSlotEvents(date, $app.config.dayBoundaries.value, $app.config.weekOptions.value.eventGrouping?.slotDurationMinutes || 60, $app.config.timezone.value, sortedEvents);
+      setSlotEvents(newSlotEvents);
+
+      const filteredEvents = sortedEvents.filter(event => event._isVisible);
+
+      return handleEventConcurrency(filteredEvents);
+    } else {
+      setSlotEvents([]);
+      return handleEventConcurrency(sortedEvents);
+    }
+  }, [calendarEvents, $app.calendarState.isEventGroupingEnabled.value])
 
   const handleOnClick = (
     e: MouseEvent,
@@ -137,6 +157,14 @@ export default function TimeGridDay({
           calendarEvent={event}
           dayBoundariesDateTime={dayBoundariesDateTime}
           setMouseDown={setMouseDownOnChild}
+        />
+      ))}
+
+      {slotEvents.map(slotEvent => (
+        <TimeSlotEvent
+          key={slotEvent.id}
+          slotData={slotEvent}
+          dayBoundariesDateTime={dayBoundariesDateTime}
         />
       ))}
     </div>

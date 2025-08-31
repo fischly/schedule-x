@@ -15,6 +15,7 @@ export default interface CalendarControlsPlugin extends PluginBase<string> {
   onRender($app: CalendarAppSingleton): void
   setDate(date: Temporal.PlainDate): void
   setView(view: string): void
+  setEventGroupingEnabled(isEnabled: boolean): void
   setFirstDayOfWeek(firstDayOfWeek: WeekDay): void
   setLocale(locale: string): void
   setViews(views: [View, ...View[]]): void

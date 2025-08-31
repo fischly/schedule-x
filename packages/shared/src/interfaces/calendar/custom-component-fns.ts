@@ -2,6 +2,7 @@ import { CustomComponentFn } from './calendar-config'
 
 export type CustomComponentName =
   | 'timeGridEvent'
+  | 'timeSlotEvent'
   | 'dateGridEvent'
   | 'monthGridEvent'
   | 'monthAgendaEvent'

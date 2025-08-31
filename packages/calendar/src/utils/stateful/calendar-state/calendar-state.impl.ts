@@ -20,6 +20,7 @@ export const createCalendarState = (
   const view = computed(() => {
     return _view.value
   })
+  const isEventGroupingEnabled = signal<boolean>(calendarConfig.weekOptions.value.eventGrouping?.enabled || false)
   const range = signal<DateRange | null>(null)
 
   let wasInitialized = false
@@ -105,6 +106,10 @@ export const createCalendarState = (
         _view.value = newView
         setRange(selectedDate)
       })
+    },
+    isEventGroupingEnabled,
+    setIsEventGroupingEnabled: (isEnabled: boolean) => {
+      isEventGroupingEnabled.value = isEnabled
     },
   }
 }

@@ -58,6 +58,13 @@ export default function CalendarWrapper({ $app }: props) {
     if (!newView || !viewElement || newView.name === currentView?.name) return
 
     if (currentView) currentView.destroy()
+    
+    if (newView.name === InternalViewName.Week) {
+      $app.calendarState.setIsEventGroupingEnabled(
+        $app.config.weekOptions.value.eventGrouping?.enabled || false
+      )
+    }
+      
     setCurrentView(newView)
     newView.render(viewElement, $app)
   })

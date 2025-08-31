@@ -8,6 +8,7 @@ export default interface CalendarState {
   setView: (view: ViewName, selectedDate: Temporal.PlainDate) => void
   range: Signal<DateRange | null>
   isDark: Signal<boolean>
-
   setRange: (date: Temporal.PlainDate) => void
+  isEventGroupingEnabled: Signal<boolean>
+  setIsEventGroupingEnabled: (isEnabled: boolean) => void
 }
