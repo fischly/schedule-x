@@ -3,6 +3,9 @@
   "umdName": "SXCurrentTime",
   "version": "3.0.0-forked.4",
   "description": "Schedule-X plugin for displaying an indicator for the current time",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "Tom Österlund",
     "email": "tom@schedule-x.dev",
@@ -32,5 +35,5 @@
     "directory": "packages/current-time"
   },
   "homepage": "https://schedule-x.dev",
-  "gitHead": "76a29056fe7e68e2be987f23c2c38594dd03a3c5"
+  "gitHead": "a21a1afb00194e841ace212de7a81ee153cc79d4"
 }

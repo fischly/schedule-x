@@ -1,6 +1,9 @@
 {
   "name": "@fischly-x/theme-default",
   "version": "3.0.0-forked.4",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "author": {
     "name": "Tom Österlund",
@@ -21,7 +24,7 @@
   "files": [
     "dist"
   ],
-  "gitHead": "76a29056fe7e68e2be987f23c2c38594dd03a3c5",
+  "gitHead": "a21a1afb00194e841ace212de7a81ee153cc79d4",
   "repository": {
     "type": "git",
     "url": "https://github.com/schedule-x/schedule-x",
