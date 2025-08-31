@@ -1,5 +1,5 @@
-import { CalendarAppSingleton } from '@schedule-x/shared'
-import { CalendarEventInternal } from '@schedule-x/shared/src'
+import { CalendarAppSingleton } from '@fischly-x/shared'
+import { CalendarEventInternal } from '@fischly-x/shared/src'
 import { render } from '@testing-library/preact'
 import { AppContext } from '../../../../../utils/stateful/app-context'
 import MonthGridEvent from '../../month-grid-event'

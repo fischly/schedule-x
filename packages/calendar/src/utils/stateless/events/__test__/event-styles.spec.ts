@@ -3,10 +3,10 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { getInlineStartRule, getWidthRule } from '../event-styles'
 import { stubInterface } from 'ts-sinon'
-import { CalendarEventInternal } from '@schedule-x/shared'
+import { CalendarEventInternal } from '@fischly-x/shared'
 
 describe('Event styles', () => {
   describe('getting the event width', () => {

@@ -1,13 +1,13 @@
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import EventsFacade from '@schedule-x/shared/src/utils/stateful/events-facade/events-facade.interface'
-import EventsFacadeImpl from '@schedule-x/shared/src/utils/stateful/events-facade/events-facade.impl'
-import CalendarEventExternal from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
-import { EventId } from '@schedule-x/shared/src/types/event-id'
-import { definePlugin } from '@schedule-x/shared/src/utils/stateless/calendar/define-plugin'
-import { EventsService } from '@schedule-x/shared/src/interfaces/events-service/events-service.interface'
-import { BackgroundEvent } from '@schedule-x/shared/src/interfaces/calendar/background-event'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import EventsFacade from '@fischly-x/shared/src/utils/stateful/events-facade/events-facade.interface'
+import EventsFacadeImpl from '@fischly-x/shared/src/utils/stateful/events-facade/events-facade.impl'
+import CalendarEventExternal from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { EventId } from '@fischly-x/shared/src/types/event-id'
+import { definePlugin } from '@fischly-x/shared/src/utils/stateless/calendar/define-plugin'
+import { EventsService } from '@fischly-x/shared/src/interfaces/events-service/events-service.interface'
+import { BackgroundEvent } from '@fischly-x/shared/src/interfaces/calendar/background-event'
 
-import { validateEvents } from '@schedule-x/shared/src/utils/stateless/validation/validate-events'
+import { validateEvents } from '@fischly-x/shared/src/utils/stateless/validation/validate-events'
 
 class EventsServicePluginImpl implements EventsService {
   name = 'EventsServicePlugin'

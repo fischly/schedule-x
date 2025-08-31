@@ -1,18 +1,18 @@
-import { EventRecurrencePlugin } from '@schedule-x/shared/src/interfaces/event-recurrence/event-recurrence-plugin.interface'
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import { EventId } from '@schedule-x/shared/src/types/event-id'
-import { PluginName } from '@schedule-x/shared/src/enums/plugin-name.enum'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { EventRecurrencePlugin } from '@fischly-x/shared/src/interfaces/event-recurrence/event-recurrence-plugin.interface'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import { EventId } from '@fischly-x/shared/src/types/event-id'
+import { PluginName } from '@fischly-x/shared/src/enums/plugin-name.enum'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import { DndUpdater } from './util/stateful/dnd-updater'
-import EventsFacade from '@schedule-x/shared/src/utils/stateful/events-facade/events-facade.interface'
+import EventsFacade from '@fischly-x/shared/src/utils/stateful/events-facade/events-facade.interface'
 import { EventsFacadeImpl } from './util/stateful/events-facade'
 import {
   createRecurrencesForBackgroundEvent,
   createRecurrencesForEvent,
 } from './util/stateless/create-recurrences-for-event'
 import { ResizeUpdater } from './util/stateful/resize-updater'
-import { definePlugin } from '@schedule-x/shared/src/utils/stateless/calendar/define-plugin'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
+import { definePlugin } from '@fischly-x/shared/src/utils/stateless/calendar/define-plugin'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
 import { AugmentedBackgroundEvent } from './types/augmented-event'
 import { batch } from '@preact/signals'
 
@@ -44,7 +44,7 @@ class EventRecurrencePluginImpl implements EventRecurrencePlugin {
 
   get eventsFacade(): EventsFacade {
     console.warn(
-      '[Schedule-X warning]: the eventsFacade is deprecated and will be removed in v2. Please use the createEventsServicePlugin function from @schedule-x/event-recurrence instead. Docs: https://schedule-x.dev/docs/calendar/plugins/recurrence'
+      '[Schedule-X warning]: the eventsFacade is deprecated and will be removed in v2. Please use the createEventsServicePlugin function from @fischly-x/event-recurrence instead. Docs: https://schedule-x.dev/docs/calendar/plugins/recurrence'
     )
     if (!this.$app)
       throw new Error(

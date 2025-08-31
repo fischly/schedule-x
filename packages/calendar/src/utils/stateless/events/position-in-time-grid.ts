@@ -1,12 +1,12 @@
 import { Week } from '../../../types/week'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
-import CalendarAppSingleton from '@schedule-x/shared/src/interfaces/calendar/calendar-app-singleton'
-import { dateFromDateTime } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/string-to-string'
-import { timeStringFromTimePoints } from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
-import { addDays } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
-import { toIntegers } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
-import { doubleDigit } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/double-digit'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
+import CalendarAppSingleton from '@fischly-x/shared/src/interfaces/calendar/calendar-app-singleton'
+import { dateFromDateTime } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/string-to-string'
+import { timeStringFromTimePoints } from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { addDays } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
+import { toIntegers } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
+import { doubleDigit } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/double-digit'
 
 export const positionInTimeGrid = (
   timeGridEvents: CalendarEventInternal[],

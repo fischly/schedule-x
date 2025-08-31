@@ -5,7 +5,7 @@ import {
   it,
   beforeEach,
   afterEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { createCalendar } from '../factory'
 import { cleanup, waitFor } from '@testing-library/preact'
 import CalendarApp from '../calendar.app'

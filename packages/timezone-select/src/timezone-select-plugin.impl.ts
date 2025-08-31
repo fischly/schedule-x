@@ -1,8 +1,8 @@
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import { definePlugin } from '@schedule-x/shared/src/utils/stateless/calendar/define-plugin'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import { definePlugin } from '@fischly-x/shared/src/utils/stateless/calendar/define-plugin'
 import { signal } from '@preact/signals'
 import TimezoneSelect from './timezone-select'
-import TimezoneSelectPlugin from '@schedule-x/shared/src/interfaces/timezone-select/timezone-select-plugin'
+import TimezoneSelectPlugin from '@fischly-x/shared/src/interfaces/timezone-select/timezone-select-plugin'
 
 class TimezoneSelectPluginImpl implements TimezoneSelectPlugin {
   name = 'timezoneSelect'

@@ -4,11 +4,11 @@ import {
   it,
   expect,
   beforeEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { cleanup, fireEvent, screen, waitFor } from '@testing-library/preact'
 import { MONTH_VIEW } from '../../../constants/test-ids'
 import { renderComponent } from './utils'
-import { Placement } from '@schedule-x/shared/src/interfaces/date-picker/placement.enum'
+import { Placement } from '@fischly-x/shared/src/interfaces/date-picker/placement.enum'
 import { vi } from 'vitest'
 
 describe('AppPopup', () => {

@@ -16,8 +16,8 @@ import {
 import '../../packages/theme-shadcn/src/index.scss'
 import './app.css'
 import { calendars } from "./calendars.ts";
-import { createEventModalPlugin } from '@schedule-x/event-modal'
-import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
+import { createEventModalPlugin } from '@fischly-x/event-modal'
+import { createDragAndDropPlugin } from '@fischly-x/drag-and-drop'
 
 const calendarElement = document.getElementById('calendar') as HTMLElement
 

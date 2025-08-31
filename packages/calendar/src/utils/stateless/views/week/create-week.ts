@@ -1,8 +1,8 @@
-import { toDateString } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
+import { toDateString } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
 import { Week } from '../../../../types/week'
-import CalendarAppSingleton from '@schedule-x/shared/src/interfaces/calendar/calendar-app-singleton'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
+import CalendarAppSingleton from '@fischly-x/shared/src/interfaces/calendar/calendar-app-singleton'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
 
 const createOneDay = (week: Week, date: Temporal.ZonedDateTime) => {
   const dateString = toDateString(date)

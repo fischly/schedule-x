@@ -2,7 +2,7 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { createResizePlugin } from '../resize.plugin'
 import { vi } from 'vitest'
 import 'temporal-polyfill/global'

@@ -10,7 +10,7 @@ import {
   getOneLetterOrShortDayNames,
 } from '../date-time-localization'
 import 'temporal-polyfill/global'
-import { createBaseConfig } from '@schedule-x/calendar/src/__test__/utils'
+import { createBaseConfig } from '@fischly-x/calendar/src/__test__/utils'
 
 describe('get localized day names', () => {
   const timeUnitsImpl = new TimeUnitsBuilder()

@@ -1,10 +1,10 @@
-import CalendarState from '@schedule-x/shared/src/interfaces/calendar/calendar-state.interface'
+import CalendarState from '@fischly-x/shared/src/interfaces/calendar/calendar-state.interface'
 import { batch, computed, effect, Signal, signal } from '@preact/signals'
-import { ViewName } from '@schedule-x/shared/src/types/calendar/view-name'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
-import CalendarConfigInternal from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
-import TimeUnits from '@schedule-x/shared/src/utils/stateful/time-units/time-units.interface'
-import { View } from '@schedule-x/shared/src/types/calendar/view'
+import { ViewName } from '@fischly-x/shared/src/types/calendar/view-name'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
+import CalendarConfigInternal from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
+import TimeUnits from '@fischly-x/shared/src/utils/stateful/time-units/time-units.interface'
+import { View } from '@fischly-x/shared/src/types/calendar/view'
 import EventColors from '../event-colors/event-colors'
 
 export const createCalendarState = (

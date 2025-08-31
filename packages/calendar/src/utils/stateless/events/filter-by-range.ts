@@ -1,7 +1,7 @@
-import { BackgroundEvent } from '@schedule-x/shared/src/interfaces/calendar/background-event'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
+import { BackgroundEvent } from '@fischly-x/shared/src/interfaces/calendar/background-event'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
 
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 export const filterByRange = (
   events: BackgroundEvent[],

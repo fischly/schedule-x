@@ -5,11 +5,11 @@ import {
   expect,
   beforeEach,
   mockFn,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { cleanup, render, screen } from '@testing-library/preact'
 import { AppContext } from '../../../utils/stateful/app-context'
 import YearsViewAccordion from '../../years-view-accordion'
-import { Month } from '@schedule-x/shared/src/enums/time/month.enum'
+import { Month } from '@fischly-x/shared/src/enums/time/month.enum'
 import { createAppSingleton } from '../../../factory'
 
 describe('YearsViewAccordion', () => {

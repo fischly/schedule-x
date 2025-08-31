@@ -1,8 +1,8 @@
 import { useContext, useState } from 'preact/hooks'
 import { AppContext } from '../../utils/stateful/app-context'
-import Chevron from '@schedule-x/shared/src/components/buttons/chevron'
-import { getLocalizedDate } from '@schedule-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
-import { dateFromDateTime } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/string-to-string'
+import Chevron from '@fischly-x/shared/src/components/buttons/chevron'
+import { getLocalizedDate } from '@fischly-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
+import { dateFromDateTime } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/string-to-string'
 import { useSignalEffect } from '@preact/signals'
 
 export default function ForwardBackwardNavigation() {

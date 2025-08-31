@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from 'preact/hooks'
 import { AppContext } from '../../utils/stateful/app-context'
-import { ViewName } from '@schedule-x/shared/src/types/calendar/view-name'
-import { View } from '@schedule-x/shared/src/types/calendar/view'
-import { isKeyEnterOrSpace } from '@schedule-x/shared/src/utils/stateless/dom/events'
+import { ViewName } from '@fischly-x/shared/src/types/calendar/view-name'
+import { View } from '@fischly-x/shared/src/types/calendar/view'
+import { isKeyEnterOrSpace } from '@fischly-x/shared/src/utils/stateless/dom/events'
 import { useSignalEffect } from '@preact/signals'
-import chevronIcon from '@schedule-x/shared/src/assets/chevron-input.svg'
-import { randomStringId } from '@schedule-x/shared/src/utils/stateless/strings/random'
+import chevronIcon from '@fischly-x/shared/src/assets/chevron-input.svg'
+import { randomStringId } from '@fischly-x/shared/src/utils/stateless/strings/random'
 
 export default function ViewSelection() {
   const $app = useContext(AppContext)

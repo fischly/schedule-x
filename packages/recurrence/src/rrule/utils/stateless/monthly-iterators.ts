@@ -1,7 +1,7 @@
 import { RRuleOptions } from '../../types/rrule-options'
 import { isCountReached, isDatePastUntil } from './iterator-utils'
-import { toIntegers } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
-import { __deprecated__addMonthsToDateOrDatetime } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { toIntegers } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
+import { __deprecated__addMonthsToDateOrDatetime } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
 
 const monthlyIteratorBymonthday = (dtstart: string, options: RRuleOptions) => {
   let currentDate = dtstart

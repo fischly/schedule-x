@@ -1,4 +1,4 @@
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
 
 export const DEFAULT_VIEW = InternalViewName.Week
 

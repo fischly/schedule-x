@@ -5,9 +5,9 @@ import {
   expect,
   spyOn,
   beforeEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { cleanup, fireEvent, waitFor } from '@testing-library/preact'
-import DatePickerAppSingleton from '@schedule-x/shared/src/interfaces/date-picker/date-picker-app.singleton'
+import DatePickerAppSingleton from '@fischly-x/shared/src/interfaces/date-picker/date-picker-app.singleton'
 import {
   renderComponent,
   getInputElement,

@@ -4,7 +4,7 @@ import { getWeekNumber } from '../../../utils/stateless/time/get-week-number'
 import { useContext } from 'preact/hooks'
 import { AppContext } from '../../../utils/stateful/app-context'
 
-import { isSameDay } from '@schedule-x/shared/src/utils/stateless/time/comparison'
+import { isSameDay } from '@fischly-x/shared/src/utils/stateless/time/comparison'
 
 type props = {
   week: MonthAgendaWeekType

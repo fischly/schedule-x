@@ -1,11 +1,11 @@
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
-import { timeFromDateTime } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/string-to-string'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { timeFromDateTime } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/string-to-string'
 import {
   addTimePointsToDateTime,
   timePointsFromString,
-} from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
-import { DayBoundariesInternal } from '@schedule-x/shared/src/types/calendar/day-boundaries'
-import { timePointToPercentage } from '@schedule-x/shared/src/utils/stateless/time/interpolation/time-point-to-grid-percentage'
+} from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { DayBoundariesInternal } from '@fischly-x/shared/src/types/calendar/day-boundaries'
+import { timePointToPercentage } from '@fischly-x/shared/src/utils/stateless/time/interpolation/time-point-to-grid-percentage'
 
 export const getEventHeight = (
   start: Temporal.ZonedDateTime,

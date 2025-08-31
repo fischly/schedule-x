@@ -1,11 +1,11 @@
-import DatePickerState from '@schedule-x/shared/src/interfaces/date-picker/date-picker-state.interface'
-import { DatePickerView } from '@schedule-x/shared/src/interfaces/date-picker/date-picker-view.enum'
+import DatePickerState from '@fischly-x/shared/src/interfaces/date-picker/date-picker-state.interface'
+import { DatePickerView } from '@fischly-x/shared/src/interfaces/date-picker/date-picker-view.enum'
 import { effect, signal } from '@preact/signals'
-import { toDateString as formatToDateString } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/date-format/to-date-string'
-import DatePickerConfigInternal from '@schedule-x/shared/src/interfaces/date-picker/config.interface'
-import { toLocalizedDateString } from '@schedule-x/shared/src/utils/stateless/time/date-time-localization/date-time-localization'
+import { toDateString as formatToDateString } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/date-format/to-date-string'
+import DatePickerConfigInternal from '@fischly-x/shared/src/interfaces/date-picker/config.interface'
+import { toLocalizedDateString } from '@fischly-x/shared/src/utils/stateless/time/date-time-localization/date-time-localization'
 
-import { toIntegers } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
+import { toIntegers } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
 
 const getLocalizedDate = (
   date: Temporal.ZonedDateTime | Temporal.PlainDate,

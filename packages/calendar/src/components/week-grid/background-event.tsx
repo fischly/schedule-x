@@ -1,13 +1,13 @@
-import { BackgroundEvent } from '@schedule-x/shared/src/interfaces/calendar/background-event'
+import { BackgroundEvent } from '@fischly-x/shared/src/interfaces/calendar/background-event'
 import { AppContext } from '../../utils/stateful/app-context'
 import { useContext } from 'preact/hooks'
-import { getYCoordinateInTimeGrid } from '@schedule-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
+import { getYCoordinateInTimeGrid } from '@fischly-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
 import { getEventHeight } from '../../utils/stateless/events/event-styles'
 import {
   timePointsFromString,
   timeStringFromTimePoints,
-} from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
-import { isSameDay } from '@schedule-x/shared/src/utils/stateless/time/comparison'
+} from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { isSameDay } from '@fischly-x/shared/src/utils/stateless/time/comparison'
 
 type props = {
   backgroundEvent: BackgroundEvent

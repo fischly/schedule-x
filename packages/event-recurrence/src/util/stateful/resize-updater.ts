@@ -1,10 +1,10 @@
-import { addDays, CalendarAppSingleton } from '@schedule-x/shared/src'
+import { addDays, CalendarAppSingleton } from '@fischly-x/shared/src'
 import { AugmentedEvent } from '../../types/augmented-event'
-import { getDurationInMinutesTemporal } from '@schedule-x/recurrence/src/rrule/utils/stateless/duration-in-minutes'
-import { calculateDaysDifference } from '@schedule-x/shared/src/utils/stateless/time/days-difference'
-import { EventId } from '@schedule-x/shared/src/types/event-id'
+import { getDurationInMinutesTemporal } from '@fischly-x/recurrence/src/rrule/utils/stateless/duration-in-minutes'
+import { calculateDaysDifference } from '@fischly-x/shared/src/utils/stateless/time/days-difference'
+import { EventId } from '@fischly-x/shared/src/types/event-id'
 
-import { addMinutesToTemporal } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { addMinutesToTemporal } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
 
 export class ResizeUpdater {
   constructor(private $app: CalendarAppSingleton) {}

@@ -1,4 +1,4 @@
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import { TimeSlot } from './generate-timeslots'
 import { sortEventsByStartAndEnd } from './sort-by-start-date'
 

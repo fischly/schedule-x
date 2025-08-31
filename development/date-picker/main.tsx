@@ -6,9 +6,9 @@ import '@fontsource/open-sans/700-italic.css'
 import '@fontsource/roboto-condensed'
 import '../app.css'
 import '../../packages/theme-default/src/date-picker.scss'
-import { createDatePicker } from '@schedule-x/date-picker/src'
+import { createDatePicker } from '@fischly-x/date-picker/src'
 import 'temporal-polyfill/global'
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
 
 const datePicker = createDatePicker({
   teleportTo: document.body,

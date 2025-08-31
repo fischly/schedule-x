@@ -1,5 +1,5 @@
-import { CustomComponentFn } from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
-import { randomStringId } from '@schedule-x/shared/src/utils/stateless/strings/random'
+import { CustomComponentFn } from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
+import { randomStringId } from '@fischly-x/shared/src/utils/stateless/strings/random'
 
 export const getCCID = (
   customComponent: CustomComponentFn | undefined,

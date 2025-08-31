@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import {
   getBorderRule,
   getEventHeight,
@@ -8,26 +8,26 @@ import {
 } from '../../utils/stateless/events/event-styles'
 import { useContext, useEffect, useRef, useState } from 'preact/hooks'
 import { AppContext } from '../../utils/stateful/app-context'
-import UserIcon from '@schedule-x/shared/src/components/icons/user-icon'
-import TimeIcon from '@schedule-x/shared/src/components/icons/time-icon'
-import LocationPinIcon from '@schedule-x/shared/src/components/icons/location-pin-icon'
-import { deepCloneEvent } from '@schedule-x/shared/src/utils/stateless/calendar/deep-clone-event'
-import { DayBoundariesDateTime } from '@schedule-x/shared/src/types/day-boundaries-date-time'
-import { getTimeGridEventCopyElementId } from '@schedule-x/shared/src/utils/stateless/strings/selector-generators'
+import UserIcon from '@fischly-x/shared/src/components/icons/user-icon'
+import TimeIcon from '@fischly-x/shared/src/components/icons/time-icon'
+import LocationPinIcon from '@fischly-x/shared/src/components/icons/location-pin-icon'
+import { deepCloneEvent } from '@fischly-x/shared/src/utils/stateless/calendar/deep-clone-event'
+import { DayBoundariesDateTime } from '@fischly-x/shared/src/types/day-boundaries-date-time'
+import { getTimeGridEventCopyElementId } from '@fischly-x/shared/src/utils/stateless/strings/selector-generators'
 import useEventInteractions from '../../utils/stateful/hooks/use-event-interactions'
-import { concatenatePeople } from '@schedule-x/shared/src/utils/stateless/strings/concatenate-people'
+import { concatenatePeople } from '@fischly-x/shared/src/utils/stateless/strings/concatenate-people'
 import { Fragment } from 'preact'
 import { getCCID } from './time-grid-event-utils'
 import { getElementByCCID } from '../../utils/stateless/dom/getters'
 import { invokeOnEventClickCallback } from '../../utils/stateless/events/invoke-on-event-click-callback'
 import { invokeOnEventDoubleClickCallback } from '../../utils/stateless/events/invoke-on-event-double-click-callback'
-import { getEventCoordinates } from '@schedule-x/shared/src/utils/stateless/dom/get-event-coordinates'
-import { isUIEventTouchEvent } from '@schedule-x/shared/src/utils/stateless/dom/is-touch-event'
-import { getYCoordinateInTimeGrid } from '@schedule-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
-import { nextTick } from '@schedule-x/shared/src/utils/stateless/next-tick'
+import { getEventCoordinates } from '@fischly-x/shared/src/utils/stateless/dom/get-event-coordinates'
+import { isUIEventTouchEvent } from '@fischly-x/shared/src/utils/stateless/dom/is-touch-event'
+import { getYCoordinateInTimeGrid } from '@fischly-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
+import { nextTick } from '@fischly-x/shared/src/utils/stateless/next-tick'
 import { focusModal } from '../../utils/stateless/events/focus-modal'
 import { wasEventAddedInLastSecond } from '../../views/month-agenda/utils/stateless/was-event-added-in-last-second'
-import { timeFn } from '@schedule-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
+import { timeFn } from '@fischly-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
 
 type props = {
   calendarEvent: CalendarEventInternal

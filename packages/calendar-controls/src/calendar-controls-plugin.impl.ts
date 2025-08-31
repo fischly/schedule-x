@@ -1,20 +1,20 @@
-import CalendarControlsPlugin from '@schedule-x/shared/src/interfaces/calendar-controls/calendar-controls-plugin.interface'
-import { CalendarAppSingleton, View } from '@schedule-x/shared/src'
-import { PluginName } from '@schedule-x/shared/src/enums/plugin-name.enum'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
-import { DayBoundariesExternal } from '@schedule-x/shared/src/types/calendar/day-boundaries'
+import CalendarControlsPlugin from '@fischly-x/shared/src/interfaces/calendar-controls/calendar-controls-plugin.interface'
+import { CalendarAppSingleton, View } from '@fischly-x/shared/src'
+import { PluginName } from '@fischly-x/shared/src/enums/plugin-name.enum'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
+import { DayBoundariesExternal } from '@fischly-x/shared/src/types/calendar/day-boundaries'
 import {
   CalendarType,
   MonthGridOptions,
   WeekOptions,
-} from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
+} from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
 import {
   timePointsFromString,
   timeStringFromTimePoints,
-} from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
-import { definePlugin } from '@schedule-x/shared/src/utils/stateless/calendar/define-plugin'
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+} from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { definePlugin } from '@fischly-x/shared/src/utils/stateless/calendar/define-plugin'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 class CalendarControlsPluginImpl implements CalendarControlsPlugin {
   name = PluginName.CalendarControls

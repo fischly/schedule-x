@@ -3,9 +3,9 @@ import MonthViewHeader from './month-view-header'
 import DayNames from './day-names'
 import { useContext, useEffect, useState } from 'preact/hooks'
 import { AppContext } from '../utils/stateful/app-context'
-import { MonthWithDates } from '@schedule-x/shared/src/types/time'
+import { MonthWithDates } from '@fischly-x/shared/src/types/time'
 import MonthViewWeek from './month-view-week'
-import { randomStringId } from '@schedule-x/shared/src/utils/stateless/strings/random'
+import { randomStringId } from '@fischly-x/shared/src/utils/stateless/strings/random'
 
 type props = {
   seatYearsView: () => void

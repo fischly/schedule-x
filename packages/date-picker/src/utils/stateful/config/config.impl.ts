@@ -1,15 +1,15 @@
-import DatePickerConfigInternal from '@schedule-x/shared/src/interfaces/date-picker/config.interface'
+import DatePickerConfigInternal from '@fischly-x/shared/src/interfaces/date-picker/config.interface'
 import {
   DEFAULT_FIRST_DAY_OF_WEEK,
   DEFAULT_LOCALE,
-} from '@schedule-x/shared/src/values'
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
-import { Placement } from '@schedule-x/shared/src/interfaces/date-picker/placement.enum'
-import { DatePickerListeners } from '@schedule-x/shared/src/interfaces/date-picker/listeners.interface'
-import { DatePickerStyle } from '@schedule-x/shared/src/interfaces/date-picker/style.interface'
+} from '@fischly-x/shared/src/values'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
+import { Placement } from '@fischly-x/shared/src/interfaces/date-picker/placement.enum'
+import { DatePickerListeners } from '@fischly-x/shared/src/interfaces/date-picker/listeners.interface'
+import { DatePickerStyle } from '@fischly-x/shared/src/interfaces/date-picker/style.interface'
 import { signal, Signal } from '@preact/signals'
 
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 export class ConfigImpl implements DatePickerConfigInternal {
   locale: Signal<string>

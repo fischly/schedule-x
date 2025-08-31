@@ -2,12 +2,12 @@ import { useEffect, useState, useRef } from 'preact/hooks'
 import {
   IANA_TIMEZONES,
   IANATimezone,
-} from '@schedule-x/shared/src/utils/stateless/time/tzdb'
-import { getOffsetForTimezone } from '@schedule-x/shared/src/utils/stateless/time/get-offset-for-timezone'
-import { isKeyEnterOrSpace } from '@schedule-x/shared/src/utils/stateless/dom/events'
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import chevronIcon from '@schedule-x/shared/src/assets/chevron-input.svg'
-import { randomStringId } from '@schedule-x/shared/src/utils/stateless/strings/random'
+} from '@fischly-x/shared/src/utils/stateless/time/tzdb'
+import { getOffsetForTimezone } from '@fischly-x/shared/src/utils/stateless/time/get-offset-for-timezone'
+import { isKeyEnterOrSpace } from '@fischly-x/shared/src/utils/stateless/dom/events'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import chevronIcon from '@fischly-x/shared/src/assets/chevron-input.svg'
+import { randomStringId } from '@fischly-x/shared/src/utils/stateless/strings/random'
 
 export default function TimezoneSelect({
   $app,

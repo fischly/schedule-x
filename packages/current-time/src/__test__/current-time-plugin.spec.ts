@@ -3,8 +3,8 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import { __createAppWithViews__ } from '@schedule-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import { __createAppWithViews__ } from '@fischly-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
 import { createCurrentTimePlugin } from '../current-time-plugin.impl'
 import { waitFor } from '@testing-library/preact'
 import { assertIsDIV } from '../../../../libs/assertions/src'

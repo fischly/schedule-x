@@ -1,4 +1,4 @@
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import { useContext, useState, useMemo } from 'preact/hooks'
 import { AppContext } from '../../utils/stateful/app-context'
 import TimeGridEvent from './time-grid-event'
@@ -7,18 +7,18 @@ import { generateSlotEvents } from '../../utils/stateless/events/filter-events-i
 import { filterEvents } from '../../utils/stateless/events/filter-events-in-timeslots'
 import { sortEventsByStartAndEnd } from '../../utils/stateless/events/sort-by-start-date'
 import { handleEventConcurrency } from '../../utils/stateless/events/event-concurrency'
-import { timeStringFromTimePoints } from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
-import { addDays } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
-import { DayBoundariesDateTime } from '@schedule-x/shared/src/types/day-boundaries-date-time'
+import { timeStringFromTimePoints } from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { addDays } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { DayBoundariesDateTime } from '@fischly-x/shared/src/types/day-boundaries-date-time'
 import { getClickDateTime } from '../../utils/stateless/time/grid-click-to-datetime/grid-click-to-datetime'
-import { getLocalizedDate } from '@schedule-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
+import { getLocalizedDate } from '@fischly-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
 import { getClassNameForWeekday } from '../../utils/stateless/get-class-name-for-weekday'
 import TimeGridBackgroundEvent from './background-event'
-import { BackgroundEvent } from '@schedule-x/shared/src/interfaces/calendar/background-event'
+import { BackgroundEvent } from '@fischly-x/shared/src/interfaces/calendar/background-event'
 import { useComputed } from '@preact/signals'
 
-import { isSameDay } from '@schedule-x/shared/src/utils/stateless/time/comparison'
-import { toDateString } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
+import { isSameDay } from '@fischly-x/shared/src/utils/stateless/time/comparison'
+import { toDateString } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
 
 type props = {
   calendarEvents: CalendarEventInternal[]

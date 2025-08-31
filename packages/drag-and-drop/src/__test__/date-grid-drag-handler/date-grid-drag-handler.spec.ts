@@ -5,15 +5,15 @@ import {
   it,
   expect,
   beforeEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import CalendarAppSingleton from '@schedule-x/shared/src/interfaces/calendar/calendar-app-singleton'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import CalendarAppSingleton from '@fischly-x/shared/src/interfaces/calendar/calendar-app-singleton'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import { Mock, vi } from 'vitest'
-import { __createAppWithViews__ } from '@schedule-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
-import CalendarEventBuilder from '@schedule-x/shared/src/utils/stateless/calendar/calendar-event/calendar-event.builder'
+import { __createAppWithViews__ } from '@fischly-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
+import CalendarEventBuilder from '@fischly-x/shared/src/utils/stateless/calendar/calendar-event/calendar-event.builder'
 import DateGridDragHandlerImpl from '../../date-grid-drag-handler.impl'
 import { getEventWithId } from '../time-grid-drag-handler/utils'
-import { deepCloneEvent } from '@schedule-x/shared/src'
+import { deepCloneEvent } from '@fischly-x/shared/src'
 import { waitFor } from '@testing-library/preact'
 import 'temporal-polyfill/global'
 

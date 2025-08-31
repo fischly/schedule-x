@@ -1,11 +1,11 @@
-import PluginBase from '@schedule-x/shared/src/interfaces/plugin.interface'
-import { PluginName } from '@schedule-x/shared/src/enums/plugin-name.enum'
-import CalendarAppSingleton from '@schedule-x/shared/src/interfaces/calendar/calendar-app-singleton'
+import PluginBase from '@fischly-x/shared/src/interfaces/plugin.interface'
+import { PluginName } from '@fischly-x/shared/src/enums/plugin-name.enum'
+import CalendarAppSingleton from '@fischly-x/shared/src/interfaces/calendar/calendar-app-singleton'
 import ScrollControllerConfig from './interfaces/config'
 import { effect } from '@preact/signals'
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
-import { definePlugin } from '@schedule-x/shared/src/utils/stateless/calendar/define-plugin'
-import { timePointsFromString } from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
+import { definePlugin } from '@fischly-x/shared/src/utils/stateless/calendar/define-plugin'
+import { timePointsFromString } from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
 
 class ScrollControllerPlugin implements PluginBase<string> {
   name = PluginName.ScrollController

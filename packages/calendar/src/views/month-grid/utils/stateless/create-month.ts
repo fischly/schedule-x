@@ -1,4 +1,4 @@
-import TimeUnits from '@schedule-x/shared/src/utils/stateful/time-units/time-units.interface'
+import TimeUnits from '@fischly-x/shared/src/utils/stateful/time-units/time-units.interface'
 import { Month, MonthWeek } from '../../types/month'
 
 const createWeekForMonth = (week: MonthWeek, day: Temporal.ZonedDateTime) => {

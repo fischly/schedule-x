@@ -1,13 +1,13 @@
-import { addDays, CalendarAppSingleton } from '@schedule-x/shared/src'
+import { addDays, CalendarAppSingleton } from '@fischly-x/shared/src'
 import { RecurrenceSet } from '../../../../recurrence/src'
 import { getDurationInMinutesTemporal } from '../../../../recurrence/src/rrule/utils/stateless/duration-in-minutes'
-import { calculateDaysDifference } from '@schedule-x/shared/src/utils/stateless/time/days-difference'
+import { calculateDaysDifference } from '@fischly-x/shared/src/utils/stateless/time/days-difference'
 import {
   parseRFC5545ToTemporal,
   parseTemporalToRFC5545,
 } from '../../../../recurrence/src/parsers/rrule/parse-rrule'
-import { EventId } from '@schedule-x/shared/src/types/event-id'
-import { addMinutesToTemporal } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { EventId } from '@fischly-x/shared/src/types/event-id'
+import { addMinutesToTemporal } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
 
 export class DndUpdater {
   constructor(private $app: CalendarAppSingleton) {}

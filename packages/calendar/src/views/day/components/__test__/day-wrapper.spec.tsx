@@ -4,12 +4,12 @@ import {
   it,
   afterEach,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import CalendarAppSingleton from '@schedule-x/shared/src/interfaces/calendar/calendar-app-singleton'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import CalendarAppSingleton from '@fischly-x/shared/src/interfaces/calendar/calendar-app-singleton'
 import { cleanup, render } from '@testing-library/preact'
 import { DayWrapper } from '../day-wrapper'
 import { __createAppWithViews__ } from '../../../../utils/stateless/testing/__create-app-with-views__'
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
 import { vi } from 'vitest'
 
 const resizeObserver = class ResizeObserver {

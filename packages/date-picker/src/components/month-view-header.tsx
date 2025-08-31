@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from 'preact/hooks'
 import { AppContext } from '../utils/stateful/app-context'
-import { toLocalizedMonth } from '@schedule-x/shared/src/utils/stateless/time/date-time-localization/date-time-localization'
+import { toLocalizedMonth } from '@fischly-x/shared/src/utils/stateless/time/date-time-localization/date-time-localization'
 import {
   getFirstDayOfNextMonth,
   getFirstDayOPreviousMonth,
-} from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/date-time-mutation'
-import Chevron from '@schedule-x/shared/src/components/buttons/chevron'
+} from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/date-time-mutation'
+import Chevron from '@fischly-x/shared/src/components/buttons/chevron'
 
 type props = {
   setYearsView: () => void

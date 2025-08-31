@@ -4,7 +4,7 @@ import {
   it,
   expect,
   beforeEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { waitFor } from '@testing-library/preact'
 import { vi } from 'vitest'
 import { viewMonthGrid } from '../views/month-grid'

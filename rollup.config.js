@@ -17,8 +17,8 @@ async function getSortedPackages(scope, ignore) {
   const packages = await Project.getPackages(__dirname || process.cwd())
   let filtered = filterPackages(packages, scope, ignore, true)
   const nonTSPackages = [
-    '@schedule-x/theme-default',
-    '@schedule-x/theme-shadcn',
+    '@fischly-x/theme-default',
+    '@fischly-x/theme-shadcn',
     '@schedule-x/eslint-config',
     '@schedule-x/prettier-config',
   ]
@@ -53,6 +53,10 @@ async function build(commandLineArgs) {
       }),
       image(),
     ]
+
+    console.log('---')
+    console.log(basePath, umd)
+    console.log('---')
 
     config.push({
       input,

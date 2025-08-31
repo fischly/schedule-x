@@ -1,14 +1,14 @@
-import { WeekWithDates } from '@schedule-x/shared/src/types/time'
+import { WeekWithDates } from '@fischly-x/shared/src/types/time'
 import { DATE_PICKER_WEEK } from '../constants/test-ids'
 import { useContext } from 'preact/hooks'
 import { AppContext } from '../utils/stateful/app-context'
 import {
   isSameMonth,
   isToday,
-} from '@schedule-x/shared/src/utils/stateless/time/comparison'
-import { addDays } from '@schedule-x/shared/src'
-import { getLocalizedDate } from '@schedule-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
-import { isSameDay } from '@schedule-x/shared/src/utils/stateless/time/comparison'
+} from '@fischly-x/shared/src/utils/stateless/time/comparison'
+import { addDays } from '@fischly-x/shared/src'
+import { getLocalizedDate } from '@fischly-x/shared/src/utils/stateless/time/date-time-localization/get-time-stamp'
+import { isSameDay } from '@fischly-x/shared/src/utils/stateless/time/comparison'
 
 type props = {
   week: WeekWithDates

@@ -3,13 +3,13 @@ import { getDurationInMinutes } from './utils/stateless/duration-in-minutes'
 import { weeklyIteratorResult } from './utils/stateless/weekly-iterator'
 import { RRuleFreq } from './enums/rrule-freq'
 import { Recurrence } from '../types/recurrence'
-import { sxDateTimeStringRegex } from '@schedule-x/shared/src/utils/stateless/time/validation/regex'
-import { calculateDaysDifference } from '@schedule-x/shared/src/utils/stateless/time/days-difference'
-import { addMinutes } from '@schedule-x/shared/src'
+import { sxDateTimeStringRegex } from '@fischly-x/shared/src/utils/stateless/time/validation/regex'
+import { calculateDaysDifference } from '@fischly-x/shared/src/utils/stateless/time/days-difference'
+import { addMinutes } from '@fischly-x/shared/src'
 import { dailyIteratorResult } from './utils/stateless/daily-iterator'
 import { monthlyIteratorResult } from './utils/stateless/monthly-iterators'
 import { yearlyIteratorResult } from './utils/stateless/yearly-iterator'
-import { __deprecated__addDaysToDateOrDateTime } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { __deprecated__addDaysToDateOrDateTime } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
 
 export class RRule {
   private options: RRuleOptions

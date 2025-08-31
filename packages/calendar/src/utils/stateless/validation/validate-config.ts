@@ -1,4 +1,4 @@
-import { CalendarConfigExternal } from '@schedule-x/shared/src'
+import { CalendarConfigExternal } from '@fischly-x/shared/src'
 
 export const validateConfig = (config: CalendarConfigExternal) => {
   if (

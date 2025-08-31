@@ -1,4 +1,4 @@
-import { PreactViewComponent } from '@schedule-x/shared/src/types/calendar/preact-view-component'
+import { PreactViewComponent } from '@fischly-x/shared/src/types/calendar/preact-view-component'
 import { useEffect, useState } from 'preact/hooks'
 import { MonthAgenda } from '../types/month-agenda'
 import { createAgendaMonth } from '../utils/stateless/create-agenda-month'
@@ -9,7 +9,7 @@ import { positionEventsInAgenda } from '../utils/stateless/position-events-in-ag
 import { sortEventsByStartAndEnd } from '../../../utils/stateless/events/sort-by-start-date'
 import MonthAgendaEvents from './month-agenda-events'
 
-import { isSameDay } from '@schedule-x/shared/src/utils/stateless/time/comparison'
+import { isSameDay } from '@fischly-x/shared/src/utils/stateless/time/comparison'
 
 export const MonthAgendaWrapper: PreactViewComponent = ({ $app, id }) => {
   const getMonth = () => {

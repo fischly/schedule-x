@@ -4,12 +4,12 @@ import {
   it,
   expect,
   beforeEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { cleanup } from '@testing-library/preact'
-import TimeUnitsBuilder from '@schedule-x/shared/src/utils/stateful/time-units/time-units.builder'
+import TimeUnitsBuilder from '@fischly-x/shared/src/utils/stateful/time-units/time-units.builder'
 import { createAppSingleton } from '../../../factory'
 import { renderComponent } from './utils'
-import { createBaseConfig } from '@schedule-x/calendar/src/__test__/utils'
+import { createBaseConfig } from '@fischly-x/calendar/src/__test__/utils'
 
 describe('MonthViewWeek', () => {
   beforeEach(() => {

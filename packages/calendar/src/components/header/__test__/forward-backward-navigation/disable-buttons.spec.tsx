@@ -4,7 +4,7 @@ import {
   it,
   expect,
   afterEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { __createAppWithViews__ } from '../../../../utils/stateless/testing/__create-app-with-views__'
 import { getLeftChevron, getRightChevron, renderComponent } from './utils'
 import { assertElementType } from '../../../../../../../libs/assertions/src'

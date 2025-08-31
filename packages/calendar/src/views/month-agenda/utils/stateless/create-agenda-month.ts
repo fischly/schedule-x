@@ -1,5 +1,5 @@
 import { MonthAgenda } from '../../types/month-agenda'
-import TimeUnits from '@schedule-x/shared/src/utils/stateful/time-units/time-units.interface'
+import TimeUnits from '@fischly-x/shared/src/utils/stateful/time-units/time-units.interface'
 
 export const createAgendaMonth = (
   date: Temporal.ZonedDateTime,

@@ -2,10 +2,10 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { createDatePickerState } from '../date-picker-state.impl'
 import { stubInterface } from 'ts-sinon'
-import DatePickerConfigInternal from '@schedule-x/shared/src/interfaces/date-picker/config.interface'
+import DatePickerConfigInternal from '@fischly-x/shared/src/interfaces/date-picker/config.interface'
 import { signal } from '@preact/signals'
 import 'temporal-polyfill/global'
 

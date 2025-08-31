@@ -1,21 +1,21 @@
-import Builder from '@schedule-x/shared/src/interfaces/builder.interface'
+import Builder from '@fischly-x/shared/src/interfaces/builder.interface'
 import CalendarConfigInternal, {
   CalendarType,
   MonthGridOptions,
   Plugins,
   WeekOptions,
-} from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
+} from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
 import CalendarConfigImpl from './calendar-config.impl'
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
-import { ViewName } from '@schedule-x/shared/src/types/calendar/view-name'
-import { View } from '@schedule-x/shared/src/types/calendar/view'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
+import { ViewName } from '@fischly-x/shared/src/types/calendar/view-name'
+import { View } from '@fischly-x/shared/src/types/calendar/view'
 import {
   DayBoundariesExternal,
   DayBoundariesInternal,
-} from '@schedule-x/shared/src/types/calendar/day-boundaries'
-import { timePointsFromString } from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
-import PluginBase from '@schedule-x/shared/src/interfaces/plugin.interface'
-import { CalendarCallbacks } from '@schedule-x/shared/src/interfaces/calendar/listeners.interface'
+} from '@fischly-x/shared/src/types/calendar/day-boundaries'
+import { timePointsFromString } from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import PluginBase from '@fischly-x/shared/src/interfaces/plugin.interface'
+import { CalendarCallbacks } from '@fischly-x/shared/src/interfaces/calendar/listeners.interface'
 import {
   DEFAULT_DAY_BOUNDARIES,
   DEFAULT_WEEK_GRID_HEIGHT,
@@ -23,12 +23,12 @@ import {
 import {
   DEFAULT_FIRST_DAY_OF_WEEK,
   DEFAULT_LOCALE,
-} from '@schedule-x/shared/src/values'
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
-import { BackgroundEvent } from '@schedule-x/shared/src/interfaces/calendar/background-event'
-import { Language } from '@schedule-x/shared/src/types/translations/language.translations'
+} from '@fischly-x/shared/src/values'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
+import { BackgroundEvent } from '@fischly-x/shared/src/interfaces/calendar/background-event'
+import { Language } from '@fischly-x/shared/src/types/translations/language.translations'
 
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 export default class CalendarConfigBuilder
   implements Builder<CalendarConfigInternal>

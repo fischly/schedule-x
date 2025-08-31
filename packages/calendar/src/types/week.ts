@@ -1,6 +1,6 @@
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import { DATE_GRID_BLOCKER } from '../constants'
-import { BackgroundEvent } from '@schedule-x/shared/src/interfaces/calendar/background-event'
+import { BackgroundEvent } from '@fischly-x/shared/src/interfaces/calendar/background-event'
 
 type WeekDay = {
   date: string

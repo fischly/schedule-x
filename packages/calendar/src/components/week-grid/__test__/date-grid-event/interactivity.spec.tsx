@@ -5,15 +5,15 @@ import {
   expect,
   beforeEach,
   afterEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { vi } from 'vitest'
 import { cleanup } from '@testing-library/preact'
 import { __createAppWithViews__ } from '../../../../utils/stateless/testing/__create-app-with-views__'
 import { stubInterface } from 'ts-sinon'
-import DragAndDropPlugin from '@schedule-x/shared/src/interfaces/drag-and-drop/drag-and-drop-plugin.interface'
-import { PluginName } from '@schedule-x/shared/src/enums/plugin-name.enum'
+import DragAndDropPlugin from '@fischly-x/shared/src/interfaces/drag-and-drop/drag-and-drop-plugin.interface'
+import { PluginName } from '@fischly-x/shared/src/enums/plugin-name.enum'
 import { renderComponent } from './utils'
-import { ResizePlugin } from '@schedule-x/shared/src/interfaces/resize/resize-plugin.interface'
+import { ResizePlugin } from '@fischly-x/shared/src/interfaces/resize/resize-plugin.interface'
 
 describe('DateGridEvent', () => {
   beforeEach(() => {

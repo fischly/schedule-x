@@ -5,7 +5,7 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import 'temporal-polyfill/global'
 
 describe('date picker date in date picker state impl', () => {

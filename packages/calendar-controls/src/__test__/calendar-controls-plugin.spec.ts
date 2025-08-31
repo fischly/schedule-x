@@ -5,20 +5,20 @@ import {
   describe,
   expect,
   it,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 
 import { createCalendarControlsPlugin } from '../calendar-controls-plugin.impl'
-import { __createAppWithViews__ } from '@schedule-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
-import { viewDay, viewMonthGrid, viewWeek } from '@schedule-x/calendar/src'
-import { DayBoundariesExternal } from '@schedule-x/shared/src/types/calendar/day-boundaries'
+import { __createAppWithViews__ } from '@fischly-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
+import { viewDay, viewMonthGrid, viewWeek } from '@fischly-x/calendar/src'
+import { DayBoundariesExternal } from '@fischly-x/shared/src/types/calendar/day-boundaries'
 import {
   CalendarType,
   MonthGridOptions,
   WeekOptions,
-} from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
-import { View } from '@schedule-x/shared/src'
+} from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
+import { View } from '@fischly-x/shared/src'
 
 describe('createCalendarControlsPlugin', () => {
   describe('Setting the date', () => {

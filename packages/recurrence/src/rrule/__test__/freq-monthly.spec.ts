@@ -2,7 +2,7 @@ import 'temporal-polyfill/global'
 import {
   describe,
   it,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { RRule } from '../rrule'
 import { RRuleFreq } from '../enums/rrule-freq'
 import { expect } from 'vitest'

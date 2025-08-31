@@ -1,6 +1,6 @@
 import CalendarConfigInternal, {
   ColorDefinition,
-} from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
+} from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
 
 export default class EventColors {
   constructor(private config: CalendarConfigInternal) {}

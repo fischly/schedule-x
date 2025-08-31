@@ -4,11 +4,11 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { createCalendar } from '../factory'
 import CalendarApp from '../calendar.app'
 import { viewMonthGrid } from '../views/month-grid'
-import { EventId } from '@schedule-x/shared/src/types/event-id'
+import { EventId } from '@fischly-x/shared/src/types/event-id'
 
 describe('The calendar factory', () => {
   it('should create a calendar app', () => {

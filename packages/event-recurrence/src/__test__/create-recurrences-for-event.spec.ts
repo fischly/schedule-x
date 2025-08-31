@@ -4,17 +4,17 @@ import {
   it,
   expect,
   beforeEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
-import { BackgroundEvent } from '@schedule-x/shared/src/interfaces/calendar/background-event'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
-import { __createAppWithViews__ } from '@schedule-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { BackgroundEvent } from '@fischly-x/shared/src/interfaces/calendar/background-event'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
+import { __createAppWithViews__ } from '@fischly-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
 import {
   createRecurrencesForEvent,
   createRecurrencesForBackgroundEvent,
 } from '../util/stateless/create-recurrences-for-event'
-import CalendarEventExternal from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
+import CalendarEventExternal from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
 import 'temporal-polyfill/global'
 
 describe('createRecurrencesForEvent', () => {

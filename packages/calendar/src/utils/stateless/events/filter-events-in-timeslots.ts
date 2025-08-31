@@ -1,8 +1,8 @@
-import { CalendarEventInternal } from "@schedule-x/shared/src/interfaces/calendar/calendar-event.interface";
+import { CalendarEventInternal } from "@fischly-x/shared/src/interfaces/calendar/calendar-event.interface";
 import { sortEventsByStartAndEnd } from "./sort-by-start-date";
 import { assignEventsToTimeSlots } from "./assign-events-to-timeslots";
 import { generateTimeslots } from "./generate-timeslots";
-import { DayBoundariesInternal } from "@schedule-x/shared/src/types/calendar/day-boundaries";
+import { DayBoundariesInternal } from "@fischly-x/shared/src/types/calendar/day-boundaries";
 import { SlotData } from "../../../components/week-grid/time-slot-event";
 
 type EventColumn = {

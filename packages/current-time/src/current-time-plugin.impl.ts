@@ -1,10 +1,10 @@
 import CurrentTimePlugin, {
   CurrentTimePluginConfig,
-} from '@schedule-x/shared/src/interfaces/current-time/current-time-plugin.interface'
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import { toDateString } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
-import { getYCoordinateInTimeGrid } from '@schedule-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
-import { definePlugin } from '@schedule-x/shared/src/utils/stateless/calendar/define-plugin'
+} from '@fischly-x/shared/src/interfaces/current-time/current-time-plugin.interface'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import { toDateString } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
+import { getYCoordinateInTimeGrid } from '@fischly-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
+import { definePlugin } from '@fischly-x/shared/src/utils/stateless/calendar/define-plugin'
 
 class CurrentTimePluginImpl implements CurrentTimePlugin {
   name = 'currentTime'

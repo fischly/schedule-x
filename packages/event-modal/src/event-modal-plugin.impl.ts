@@ -1,9 +1,9 @@
-import EventModalPlugin from '@schedule-x/shared/src/interfaces/event-modal/event-modal.plugin'
-import { PluginName } from '@schedule-x/shared/src/enums/plugin-name.enum'
+import EventModalPlugin from '@fischly-x/shared/src/interfaces/event-modal/event-modal.plugin'
+import { PluginName } from '@fischly-x/shared/src/enums/plugin-name.enum'
 import EventModal from './event-modal'
 import { batch, signal } from '@preact/signals'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
-import { definePlugin } from '@schedule-x/shared/src/utils/stateless/calendar/define-plugin'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { definePlugin } from '@fischly-x/shared/src/utils/stateless/calendar/define-plugin'
 
 class EventModalPluginImpl implements EventModalPlugin {
   name = PluginName.EventModal

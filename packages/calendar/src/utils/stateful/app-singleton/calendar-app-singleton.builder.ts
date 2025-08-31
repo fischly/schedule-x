@@ -1,13 +1,13 @@
-import Builder from '@schedule-x/shared/src/interfaces/builder.interface'
-import CalendarAppSingleton from '@schedule-x/shared/src/interfaces/calendar/calendar-app-singleton'
+import Builder from '@fischly-x/shared/src/interfaces/builder.interface'
+import CalendarAppSingleton from '@fischly-x/shared/src/interfaces/calendar/calendar-app-singleton'
 import CalendarAppSingletonImpl from './calendar-app-singleton.impl'
-import DatePickerState from '@schedule-x/shared/src/interfaces/date-picker/date-picker-state.interface'
-import TimeUnits from '@schedule-x/shared/src/utils/stateful/time-units/time-units.interface'
-import { TranslateFn } from '@schedule-x/shared/src/types/translations'
-import CalendarConfigInternal from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
-import CalendarState from '@schedule-x/shared/src/interfaces/calendar/calendar-state.interface'
-import DatePickerConfigInternal from '@schedule-x/shared/src/interfaces/date-picker/config.interface'
-import CalendarEvents from '@schedule-x/shared/src/interfaces/calendar/calendar-events.interface'
+import DatePickerState from '@fischly-x/shared/src/interfaces/date-picker/date-picker-state.interface'
+import TimeUnits from '@fischly-x/shared/src/utils/stateful/time-units/time-units.interface'
+import { TranslateFn } from '@fischly-x/shared/src/types/translations'
+import CalendarConfigInternal from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
+import CalendarState from '@fischly-x/shared/src/interfaces/calendar/calendar-state.interface'
+import DatePickerConfigInternal from '@fischly-x/shared/src/interfaces/date-picker/config.interface'
+import CalendarEvents from '@fischly-x/shared/src/interfaces/calendar/calendar-events.interface'
 
 export default class CalendarAppSingletonBuilder
   implements Builder<CalendarAppSingleton>

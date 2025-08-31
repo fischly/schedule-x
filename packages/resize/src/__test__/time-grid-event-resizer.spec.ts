@@ -6,19 +6,19 @@ import {
   expect,
   beforeEach,
   spyOn,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import { stubInterface } from 'ts-sinon'
-import CalendarConfigInternal from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
-import CalendarEventBuilder from '@schedule-x/shared/src/utils/stateless/calendar/calendar-event/calendar-event.builder'
+import CalendarConfigInternal from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
+import CalendarEventBuilder from '@fischly-x/shared/src/utils/stateless/calendar/calendar-event/calendar-event.builder'
 import { TimeGridEventResizer } from '../time-grid-event-resizer'
-import CalendarEvents from '@schedule-x/shared/src/interfaces/calendar/calendar-events.interface'
+import CalendarEvents from '@fischly-x/shared/src/interfaces/calendar/calendar-events.interface'
 import { signal } from '@preact/signals'
 import { Mock, vi } from 'vitest'
-import { deepCloneEvent } from '@schedule-x/shared/src/utils/stateless/calendar/deep-clone-event'
+import { deepCloneEvent } from '@fischly-x/shared/src/utils/stateless/calendar/deep-clone-event'
 import { createResizePlugin } from '../resize.plugin'
-import { ResizePlugin } from '@schedule-x/shared/src/interfaces/resize/resize-plugin.interface'
+import { ResizePlugin } from '@fischly-x/shared/src/interfaces/resize/resize-plugin.interface'
 import { waitFor } from '@testing-library/preact'
 import 'temporal-polyfill/global'
 

@@ -5,7 +5,7 @@ import {
 import { RRuleFreq } from '../../rrule/enums/rrule-freq'
 import { rfc5455Weekdays } from '../../utils/weekdays'
 
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 export const rruleStringToJS = (rrule: string): RRuleOptionsExternal => {
   const rruleOptions: RRuleOptionsExternal = {

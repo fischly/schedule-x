@@ -3,7 +3,7 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { getWeekNumber } from '../get-week-number'
 
 describe('getWeekNumber', () => {

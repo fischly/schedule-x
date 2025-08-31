@@ -5,12 +5,12 @@ import {
   it,
   expect,
   afterEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
 import { AppContext } from '../../../../utils/stateful/app-context'
 import { cleanup, render } from '@testing-library/preact'
 import TimeGridEvent from '../../time-grid-event'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 import { __createAppWithViews__ } from '../../../../utils/stateless/testing/__create-app-with-views__'
 
 const resizeObserver = class ResizeObserver {

@@ -1,4 +1,4 @@
-import { CalendarEventInternal } from '@schedule-x/shared/src'
+import { CalendarEventInternal } from '@fischly-x/shared/src'
 
 const areSameMinute = (
   start: Temporal.ZonedDateTime,

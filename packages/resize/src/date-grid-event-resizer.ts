@@ -1,10 +1,10 @@
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
-import { getTimeGridDayWidth } from '@schedule-x/shared/src/utils/stateless/calendar/get-time-grid-day-width'
-import { addDays } from '@schedule-x/shared/src'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
+import { getTimeGridDayWidth } from '@fischly-x/shared/src/utils/stateless/calendar/get-time-grid-day-width'
+import { addDays } from '@fischly-x/shared/src'
 import { updateEventsList } from './utils/stateless/update-events-list'
-import { getEventCoordinates } from '@schedule-x/shared/src/utils/stateless/dom/get-event-coordinates'
+import { getEventCoordinates } from '@fischly-x/shared/src/utils/stateless/dom/get-event-coordinates'
 
 export class DateGridEventResizer {
   private readonly dayWidth: number = 0

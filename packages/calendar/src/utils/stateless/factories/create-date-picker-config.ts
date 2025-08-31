@@ -1,6 +1,6 @@
-import { CalendarConfigExternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
-import { ConfigBuilder as DatePickerConfigBuilder } from '@schedule-x/date-picker/src/utils/stateful/config/config.builder'
-import { Placement } from '@schedule-x/shared/src/interfaces/date-picker/placement.enum'
+import { CalendarConfigExternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
+import { ConfigBuilder as DatePickerConfigBuilder } from '@fischly-x/date-picker/src/utils/stateful/config/config.builder'
+import { Placement } from '@fischly-x/shared/src/interfaces/date-picker/placement.enum'
 import { getDirection } from '../get-direction'
 
 export const createDatePickerConfig = (

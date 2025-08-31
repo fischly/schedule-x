@@ -4,16 +4,16 @@ import {
   describe,
   expect,
   it,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import TimeUnitsBuilder from '@schedule-x/shared/src/utils/stateful/time-units/time-units.builder'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import TimeUnitsBuilder from '@fischly-x/shared/src/utils/stateful/time-units/time-units.builder'
 import { cleanup, render, screen } from '@testing-library/preact'
 import DateAxis from '../date-axis'
 import { AppContext } from '../../../utils/stateful/app-context'
-import CalendarAppSingleton from '@schedule-x/shared/src/interfaces/calendar/calendar-app-singleton'
+import CalendarAppSingleton from '@fischly-x/shared/src/interfaces/calendar/calendar-app-singleton'
 import { __createAppWithViews__ } from '../../../utils/stateless/testing/__create-app-with-views__'
 import { beforeEach } from 'vitest'
 import { createBaseConfig } from '../../../__test__/utils'
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
 
 const renderComponent = (
   $app: CalendarAppSingleton,

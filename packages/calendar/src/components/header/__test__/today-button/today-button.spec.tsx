@@ -4,14 +4,14 @@ import {
   describe,
   expect,
   it,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { cleanup } from '@testing-library/preact'
 import {
   clickTodayButton,
   renderWithSelectedDateInThePast,
   renderWithSelectedDateToday,
 } from './utils'
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 describe('TodayButton', () => {
   afterEach(() => {

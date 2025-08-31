@@ -1,5 +1,5 @@
-import { toJSDate } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
-import { __deprecated__jsDateToDateString } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
+import { toJSDate } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
+import { __deprecated__jsDateToDateString } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/date-to-strings'
 
 function getFirstDateOfWeek(
   date: Date,

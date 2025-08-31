@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from 'preact/hooks'
 import { AppContext } from '../utils/stateful/app-context'
-import chevronIcon from '@schedule-x/shared/src/assets/chevron-input.svg'
-import { randomStringId } from '@schedule-x/shared/src/utils/stateless/strings/random'
-import { isKeyEnterOrSpace } from '@schedule-x/shared/src/utils/stateless/dom/events'
+import chevronIcon from '@fischly-x/shared/src/assets/chevron-input.svg'
+import { randomStringId } from '@fischly-x/shared/src/utils/stateless/strings/random'
+import { isKeyEnterOrSpace } from '@fischly-x/shared/src/utils/stateless/dom/events'
 
 export default function AppInput() {
   const datePickerInputId = randomStringId()

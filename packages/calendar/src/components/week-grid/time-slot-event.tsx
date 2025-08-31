@@ -1,12 +1,12 @@
 import { getEventHeight } from '../../utils/stateless/events/event-styles'
 import { useContext, useEffect, useRef } from 'preact/hooks'
 import { AppContext } from '../../utils/stateful/app-context'
-import { DayBoundariesDateTime } from '@schedule-x/shared/src/types/day-boundaries-date-time'
+import { DayBoundariesDateTime } from '@fischly-x/shared/src/types/day-boundaries-date-time'
 import { Fragment } from 'preact'
 import { getCCID } from './time-grid-event-utils'
 import { getElementByCCID } from '../../utils/stateless/dom/getters'
-import { getYCoordinateInTimeGrid } from '@schedule-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
+import { getYCoordinateInTimeGrid } from '@fischly-x/shared/src/utils/stateless/calendar/get-y-coordinate-in-time-grid'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
 
 export type SlotData = {
     id: string

@@ -1,10 +1,10 @@
-import { WeekWithDates } from '@schedule-x/shared/src/types/time'
-import { getDayNameShort } from '@schedule-x/shared/src/utils/stateless/time/date-time-localization/date-time-localization'
+import { WeekWithDates } from '@fischly-x/shared/src/types/time'
+import { getDayNameShort } from '@fischly-x/shared/src/utils/stateless/time/date-time-localization/date-time-localization'
 import { useContext, useEffect, useState } from 'preact/hooks'
 import { AppContext } from '../../utils/stateful/app-context'
-import { isToday } from '@schedule-x/shared/src/utils/stateless/time/comparison'
+import { isToday } from '@fischly-x/shared/src/utils/stateless/time/comparison'
 import { getClassNameForWeekday } from '../../utils/stateless/get-class-name-for-weekday'
-import { randomStringId, toDateString } from '@schedule-x/shared/src'
+import { randomStringId, toDateString } from '@fischly-x/shared/src'
 
 type props = {
   week: WeekWithDates

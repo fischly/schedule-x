@@ -5,18 +5,18 @@ import {
   expect,
   it,
   beforeEach,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import { createCalendar } from '@schedule-x/calendar/src/factory'
-import { createViewWeek } from '@schedule-x/calendar/src/views/week'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import { createCalendar } from '@fischly-x/calendar/src/factory'
+import { createViewWeek } from '@fischly-x/calendar/src/views/week'
 import { createTimezoneSelectPlugin, translations as timezoneSelectTranslations } from '../'
 import { afterEach } from 'vitest'
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 import { stubInterface } from 'ts-sinon'
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
 import TimezoneSelect from '../timezone-select'
 import { signal } from '@preact/signals'
-import { translate } from '@schedule-x/translations/src/translator/translate'
-import { mergeLocales, translations } from '@schedule-x/translations/src'
+import { translate } from '@fischly-x/translations/src/translator/translate'
+import { mergeLocales, translations } from '@fischly-x/translations/src'
 
 const renderComponent = (timezone: IANATimezone) => {
   const $app = stubInterface<CalendarAppSingleton>()

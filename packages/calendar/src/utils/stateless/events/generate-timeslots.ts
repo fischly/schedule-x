@@ -1,4 +1,4 @@
-import { timeStringFromTimePoints } from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { timeStringFromTimePoints } from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
 
 export type TimeSlot = {
   id: string

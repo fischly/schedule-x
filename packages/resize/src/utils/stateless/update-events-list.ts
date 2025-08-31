@@ -1,5 +1,5 @@
-import { CalendarAppSingleton } from '@schedule-x/shared/src'
-import { CalendarEventInternal } from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface'
+import { CalendarAppSingleton } from '@fischly-x/shared/src'
+import { CalendarEventInternal } from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface'
 
 export const updateEventsList = (
   $app: CalendarAppSingleton,

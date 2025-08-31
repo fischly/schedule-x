@@ -2,12 +2,12 @@ import {
   describe,
   it,
   expect,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
-import { __createAppWithViews__ } from '@schedule-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+import { __createAppWithViews__ } from '@fischly-x/calendar/src/utils/stateless/testing/__create-app-with-views__'
 import { updateEventsList } from '../update-events-list'
-import { createEventRecurrencePlugin } from '@schedule-x/event-recurrence/src'
+import { createEventRecurrencePlugin } from '@fischly-x/event-recurrence/src'
 import { vi } from 'vitest'
-import { deepCloneEvent } from '@schedule-x/shared/src/utils/stateless/calendar/deep-clone-event'
+import { deepCloneEvent } from '@fischly-x/shared/src/utils/stateless/calendar/deep-clone-event'
 import 'temporal-polyfill/global'
 
 describe('Updating the events list after resizing an event', () => {

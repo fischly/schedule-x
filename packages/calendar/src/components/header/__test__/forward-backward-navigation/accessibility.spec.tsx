@@ -4,11 +4,11 @@ import {
   describe,
   expect,
   it,
-} from '@schedule-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
+} from '@fischly-x/shared/src/utils/stateless/testing/unit/unit-testing-library.impl'
 import { __createAppWithViews__ } from '../../../../utils/stateless/testing/__create-app-with-views__'
 import { cleanup, waitFor } from '@testing-library/preact'
 import { getLeftChevron, getRightChevron, renderComponent } from './utils'
-import { InternalViewName } from '@schedule-x/shared/src/enums/calendar/internal-view.enum'
+import { InternalViewName } from '@fischly-x/shared/src/enums/calendar/internal-view.enum'
 
 const getApp = (locale: string) =>
   __createAppWithViews__({

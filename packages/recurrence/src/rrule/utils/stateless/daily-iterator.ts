@@ -1,8 +1,8 @@
 import { RRuleOptions } from '../../types/rrule-options'
 import { getJSDayFromByday } from './byday-jsday-map'
-import { toJSDate } from '@schedule-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
+import { toJSDate } from '@fischly-x/shared/src/utils/stateless/time/format-conversion/format-conversion'
 import { isCountReached, isDatePastUntil } from './iterator-utils'
-import { __deprecated__addDaysToDateOrDateTime } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { __deprecated__addDaysToDateOrDateTime } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
 
 const dailyIterator = (dtstart: string, rruleOptions: RRuleOptions) => {
   let currentDate = dtstart

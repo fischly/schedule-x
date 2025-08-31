@@ -1,11 +1,11 @@
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
 import {
   DEFAULT_FIRST_DAY_OF_WEEK,
   DEFAULT_LOCALE,
-} from '@schedule-x/shared/src/values'
-import { Placement } from '@schedule-x/shared/src/interfaces/date-picker/placement.enum'
+} from '@fischly-x/shared/src/values'
+import { Placement } from '@fischly-x/shared/src/interfaces/date-picker/placement.enum'
 import { signal } from '@preact/signals'
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 export const __createInternalConfig__ = (
   locale?: string,

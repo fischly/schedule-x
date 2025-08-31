@@ -1,4 +1,4 @@
-import CalendarEventExternal from '@schedule-x/shared/src/interfaces/calendar/calendar-event.interface.ts'
+import CalendarEventExternal from '@fischly-x/shared/src/interfaces/calendar/calendar-event.interface.ts'
 
 
 import { getListOfTimePropertiesForEvents } from '../event-properties/time.ts'

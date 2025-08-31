@@ -1,12 +1,12 @@
-import Builder from '@schedule-x/shared/src/interfaces/builder.interface'
-import DatePickerConfigInternal from '@schedule-x/shared/src/interfaces/date-picker/config.interface'
+import Builder from '@fischly-x/shared/src/interfaces/builder.interface'
+import DatePickerConfigInternal from '@fischly-x/shared/src/interfaces/date-picker/config.interface'
 import { ConfigImpl } from './config.impl'
-import { WeekDay } from '@schedule-x/shared/src/enums/time/week-day.enum'
-import { Placement } from '@schedule-x/shared/src/interfaces/date-picker/placement.enum'
-import { DatePickerListeners } from '@schedule-x/shared/src/interfaces/date-picker/listeners.interface'
-import { DatePickerStyle } from '@schedule-x/shared/src/interfaces/date-picker/style.interface'
+import { WeekDay } from '@fischly-x/shared/src/enums/time/week-day.enum'
+import { Placement } from '@fischly-x/shared/src/interfaces/date-picker/placement.enum'
+import { DatePickerListeners } from '@fischly-x/shared/src/interfaces/date-picker/listeners.interface'
+import { DatePickerStyle } from '@fischly-x/shared/src/interfaces/date-picker/style.interface'
 
-import { IANATimezone } from '@schedule-x/shared/src/utils/stateless/time/tzdb'
+import { IANATimezone } from '@fischly-x/shared/src/utils/stateless/time/tzdb'
 
 export class ConfigBuilder implements Builder<DatePickerConfigInternal> {
   locale: string | undefined

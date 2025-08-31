@@ -1,8 +1,8 @@
-import CalendarConfigInternal from '@schedule-x/shared/src/interfaces/calendar/calendar-config'
-import { timeStringFromTimePoints } from '@schedule-x/shared/src/utils/stateless/time/time-points/string-conversion'
-import { addDays } from '@schedule-x/shared/src/utils/stateless/time/date-time-mutation/adding'
-import { RangeSetterConfig } from '@schedule-x/shared/src/interfaces/calendar/range-setter-config.interface'
-import { DateRange } from '@schedule-x/shared/src/types/date-range'
+import CalendarConfigInternal from '@fischly-x/shared/src/interfaces/calendar/calendar-config'
+import { timeStringFromTimePoints } from '@fischly-x/shared/src/utils/stateless/time/time-points/string-conversion'
+import { addDays } from '@fischly-x/shared/src/utils/stateless/time/date-time-mutation/adding'
+import { RangeSetterConfig } from '@fischly-x/shared/src/interfaces/calendar/range-setter-config.interface'
+import { DateRange } from '@fischly-x/shared/src/types/date-range'
 
 const getRangeStartGivenDayBoundaries = (
   calendarConfig: CalendarConfigInternal,
