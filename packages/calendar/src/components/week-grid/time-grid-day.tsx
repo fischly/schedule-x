@@ -70,7 +70,7 @@ export default function TimeGridDay({
 
     if ($app.calendarState.isEventGroupingEnabled.value) {
       // filter events and add _isVisible to them
-      filterEvents(sortedEvents, $app.config.weekOptions.value.eventGrouping?.threshold || 2);
+      filterEvents(sortedEvents, $app.config.weekOptions.value.eventGrouping?.threshold || 2, $app.config.weekOptions.value.eventGrouping?.enableEventCutting || false);
       
       // generate slots based on the filtered events
       const newSlotEvents = generateSlotEvents(date, $app.config.dayBoundaries.value, $app.config.weekOptions.value.eventGrouping?.slotDurationMinutes || 60, $app.config.timezone.value, sortedEvents);

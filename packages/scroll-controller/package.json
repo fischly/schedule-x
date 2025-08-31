@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/scroll-controller",
   "umdName": "SXScrollController",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Schedule-X calendar scroll controller",
   "publishConfig": {
     "access": "public"
@@ -32,5 +32,5 @@
     "directory": "packages/scroll-controller"
   },
   "homepage": "https://schedule-x.dev",
-  "gitHead": "35628494ca2ffd2b3bbf73c16d9c5f9c3144a89e"
+  "gitHead": "2858d53b3535c6e5d27841406e94fe016e255626"
 }

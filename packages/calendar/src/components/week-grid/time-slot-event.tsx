@@ -89,9 +89,6 @@ export default function TimeSlotEvent({
             <div
                 ref={eventRef}
                 data-event-id={slotData.id}
-                onClick={handleOnClick}
-                onDblClick={handleOnDoubleClick}
-                onKeyDown={handleKeyDown}
                 className={classNames.join(' ')}
                 tabIndex={0}
                 role="button"
@@ -123,15 +120,19 @@ export default function TimeSlotEvent({
                                     display: 'flex',
                                     justifyContent: 'flex-end',
                                     alignItems: 'center',
-                                    cursor: 'pointer',
                                     height: '100%',
                                 }}>
-                                    <div className="sx__time-grid-event-title" style={{
-                                        textAlign: 'center',
-                                        writingMode: 'vertical-rl',
-                                        height: '100%',
-                                        background: 'rgba(190, 190, 190, 0.54)',
-                                    }} >
+                                    <div className="sx__time-grid-event-title"
+                                        onClick={handleOnClick}
+                                        onDblClick={handleOnDoubleClick}
+                                        onKeyDown={handleKeyDown}
+                                        style={{
+                                            textAlign: 'center',
+                                            writingMode: 'vertical-rl',
+                                            height: '100%',
+                                            background: 'rgba(190, 190, 190, 0.54)',
+                                            cursor: 'pointer',
+                                        }} >
                                         +{slotData.collapsedEventCount} more
                                     </div>
                                 </div>

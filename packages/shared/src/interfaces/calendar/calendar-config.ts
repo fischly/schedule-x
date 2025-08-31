@@ -25,6 +25,7 @@ export type EventGroupingOptions = {
   enabled: boolean
   slotDurationMinutes: number  // e.g., 60 for 1-hour slots
   threshold: number            // e.g., maximum of 3 concurrent events displayed
+  enableEventCutting?: boolean // if true, events will be cut off at the start to better fill in slots
 }
 
 export type WeekOptions = {

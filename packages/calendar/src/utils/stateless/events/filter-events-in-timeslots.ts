@@ -6,20 +6,20 @@ import { DayBoundariesInternal } from "@fischly-x/shared/src/types/calendar/day-
 import { SlotData } from "../../../components/week-grid/time-slot-event";
 
 type EventColumn = {
-    events: CalendarEventInternal[];    
+    events: CalendarEventInternal[];
     lastEventTime: Temporal.ZonedDateTime;
 }
 
 /**
  * Given an array of EventColumns, returns the one which lastEventTime is the earliest
  */
-// const getEarliestColumn = (columns: EventColumn[]): EventColumn => {
-//     return columns.reduce((earliest, current) => {
-//         return current.lastEventTime.toString() < earliest.lastEventTime.toString()
-//             ? current
-//             : earliest;
-//     });
-// }
+const getEarliestColumn = (columns: EventColumn[]): EventColumn => {
+    return columns.reduce((earliest, current) => {
+        return current.lastEventTime.toString() < earliest.lastEventTime.toString()
+            ? current
+            : earliest;
+    });
+}
 
 
 /**
@@ -30,7 +30,8 @@ type EventColumn = {
  */
 export const filterEvents = (
     events: CalendarEventInternal[],
-    threshold: number
+    threshold: number,
+    enableEventCutting: boolean = false
 ) => {
     // create event columns as many as the threshold value
     const eventColumns: EventColumn[] = [];
@@ -47,7 +48,7 @@ export const filterEvents = (
     // iterate over the events and try to assign them to a event column if the column has space
     for (const event of sortedEvents) {
         const eventStart = event.start as Temporal.ZonedDateTime;
-        // const eventEnd = event.end as Temporal.ZonedDateTime;
+        const eventEnd = event.end as Temporal.ZonedDateTime;
         let assigned = false;
 
         // Try to find a column where this event can fit (no overlap with the last event)
@@ -61,19 +62,21 @@ export const filterEvents = (
             }
         }
 
-        // if (!assigned) {
-        //     const earliestColumn = getEarliestColumn(eventColumns);
+        if (enableEventCutting) {
+            if (!assigned) {
+                const earliestColumn = getEarliestColumn(eventColumns);
 
-        //     if (eventEnd.toString() > earliestColumn.lastEventTime.toString()) {
-        //         event.start = earliestColumn.lastEventTime;
-        //         event._start = earliestColumn.lastEventTime;
+                if (eventEnd.toString() > earliestColumn.lastEventTime.toString()) {
+                    event.start = earliestColumn.lastEventTime;
+                    event._start = earliestColumn.lastEventTime;
 
-        //         earliestColumn.events.push(event);
-        //         earliestColumn.lastEventTime = eventEnd;
-        //         event._isVisible = true;
-        //         assigned = true;
-        //     }
-        // }
+                    earliestColumn.events.push(event);
+                    earliestColumn.lastEventTime = eventEnd;
+                    event._isVisible = true;
+                    assigned = true;
+                }
+            }
+        }
 
         // if no column has space, mark the event as _isVisible = false
         if (!assigned) {
