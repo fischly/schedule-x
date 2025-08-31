@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/recurrence",
   "umdName": "SXRecurrence",
-  "version": "3.0.0-forked.4",
+  "version": "3.0.0-forked.5",
   "description": "A library for working with recurring events according to the iCalendar specification",
   "publishConfig": {
     "access": "public"

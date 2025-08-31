@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/event-modal",
   "umdName": "SXEventModal",
-  "version": "3.0.0-forked.4",
+  "version": "3.0.0-forked.5",
   "description": "Plugin for Schedule-X to show a modal when clicking on an event",
   "publishConfig": {
     "access": "public"

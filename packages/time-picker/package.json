@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/time-picker",
   "umdName": "SXTimePicker",
-  "version": "3.0.0-forked.4",
+  "version": "3.0.0-forked.5",
   "description": "Schedule-X time picker component",
   "publishConfig": {
     "access": "public"

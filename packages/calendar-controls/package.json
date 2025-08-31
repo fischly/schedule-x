@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/calendar-controls",
   "umdName": "SXCalendarControls",
-  "version": "3.0.0-forked.4",
+  "version": "3.0.0-forked.5",
   "description": "Plugin for extra controls for the Schedule-X calendar",
   "publishConfig": {
     "access": "public"

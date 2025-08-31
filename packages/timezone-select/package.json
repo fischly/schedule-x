@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/timezone-select",
   "umdName": "SXTimezoneSelect",
-  "version": "3.0.0-forked.4",
+  "version": "3.0.0-forked.5",
   "description": "Schedule-X timezone select plugin",
   "publishConfig": {
     "access": "public"
