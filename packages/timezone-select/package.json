@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/timezone-select",
   "umdName": "SXTimezoneSelect",
-  "version": "3.0.0-forked.2",
+  "version": "3.0.0-forked.4",
   "description": "Schedule-X timezone select plugin",
   "author": {
     "name": "Tom Österlund",
@@ -42,5 +42,5 @@
     "directory": "packages/timezone-select"
   },
   "homepage": "https://schedule-x.dev",
-  "gitHead": "4558e4aeeb1a94eb5865d16691841762b0cf6d47"
+  "gitHead": "76a29056fe7e68e2be987f23c2c38594dd03a3c5"
 }
