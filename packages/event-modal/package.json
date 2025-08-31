@@ -1,5 +1,5 @@
 {
-  "name": "@schedule-x/event-modal",
+  "name": "@fischly-x/event-modal",
   "umdName": "SXEventModal",
   "version": "3.0.0",
   "description": "Plugin for Schedule-X to show a modal when clicking on an event",

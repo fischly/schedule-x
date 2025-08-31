@@ -1,5 +1,5 @@
 {
-  "name": "@schedule-x/resize",
+  "name": "@fischly-x/resize",
   "umdName": "SXResize",
   "version": "3.0.0",
   "description": "Resize events in the Schedule-X calendar",
