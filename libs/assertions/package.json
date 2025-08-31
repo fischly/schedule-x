@@ -4,7 +4,7 @@
     "access": "public"
   },
   "description": "Assertion library for testing Schedule-X",
-  "version": "3.0.0-forked.0",
+  "version": "3.0.0-forked.2",
   "module": "./dist/core.js",
   "main": "./dist/core.cjs.js",
   "umd": "./dist/core.umd.js",
@@ -15,5 +15,5 @@
   "scripts": {
     "format": "prettier . --write"
   },
-  "gitHead": "bdf911a3eea2a92d010520456a696cd31666009b"
+  "gitHead": "4558e4aeeb1a94eb5865d16691841762b0cf6d47"
 }
