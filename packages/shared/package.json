@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/shared",
   "umdName": "SXShared",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -31,5 +31,5 @@
     "url": "https://github.com/schedule-x/schedule-x",
     "directory": "packages/shared"
   },
-  "gitHead": "2858d53b3535c6e5d27841406e94fe016e255626"
+  "gitHead": "9f368ee1d1eea2342f7a9fae31170b064e64513e"
 }

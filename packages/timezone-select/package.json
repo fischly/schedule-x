@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/timezone-select",
   "umdName": "SXTimezoneSelect",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Schedule-X timezone select plugin",
   "publishConfig": {
     "access": "public"
@@ -45,5 +45,5 @@
     "directory": "packages/timezone-select"
   },
   "homepage": "https://schedule-x.dev",
-  "gitHead": "2858d53b3535c6e5d27841406e94fe016e255626"
+  "gitHead": "9f368ee1d1eea2342f7a9fae31170b064e64513e"
 }
