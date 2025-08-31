@@ -1,6 +1,6 @@
 {
   "name": "@fischly-x/theme-shadcn",
-  "version": "3.0.0-forked.5",
+  "version": "3.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -21,7 +21,7 @@
   "files": [
     "dist"
   ],
-  "gitHead": "a21a1afb00194e841ace212de7a81ee153cc79d4",
+  "gitHead": "35628494ca2ffd2b3bbf73c16d9c5f9c3144a89e",
   "repository": {
     "type": "git",
     "url": "https://github.com/schedule-x/schedule-x",

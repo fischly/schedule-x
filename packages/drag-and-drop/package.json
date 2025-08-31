@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/drag-and-drop",
   "umdName": "SXDragAndDrop",
-  "version": "3.0.0-forked.5",
+  "version": "3.0.0",
   "description": "Drag & drop plugin for Schedule-X calendar",
   "publishConfig": {
     "access": "public"
@@ -29,5 +29,5 @@
     "directory": "packages/drag-and-drop"
   },
   "homepage": "https://schedule-x.dev",
-  "gitHead": "a21a1afb00194e841ace212de7a81ee153cc79d4"
+  "gitHead": "35628494ca2ffd2b3bbf73c16d9c5f9c3144a89e"
 }

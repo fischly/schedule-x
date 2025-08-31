@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/current-time",
   "umdName": "SXCurrentTime",
-  "version": "3.0.0-forked.5",
+  "version": "3.0.0",
   "description": "Schedule-X plugin for displaying an indicator for the current time",
   "publishConfig": {
     "access": "public"
@@ -35,5 +35,5 @@
     "directory": "packages/current-time"
   },
   "homepage": "https://schedule-x.dev",
-  "gitHead": "a21a1afb00194e841ace212de7a81ee153cc79d4"
+  "gitHead": "35628494ca2ffd2b3bbf73c16d9c5f9c3144a89e"
 }
