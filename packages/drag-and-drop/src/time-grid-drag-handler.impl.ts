@@ -79,8 +79,10 @@ export default class TimeGridDragHandlerImpl implements TimeGridDragHandler {
 
     const pointsToAdd =
       currentIntervalDiff > this.lastIntervalDiff
-        ? this.CHANGE_THRESHOLD_IN_TIME_POINTS
-        : -this.CHANGE_THRESHOLD_IN_TIME_POINTS
+        ? this.CHANGE_THRESHOLD_IN_TIME_POINTS *
+          (currentIntervalDiff - this.lastIntervalDiff)
+        : -this.CHANGE_THRESHOLD_IN_TIME_POINTS *
+          (this.lastIntervalDiff - currentIntervalDiff)
     this.setTimeForEventCopy(pointsToAdd)
     this.lastIntervalDiff = currentIntervalDiff
   }
@@ -101,13 +103,23 @@ export default class TimeGridDragHandlerImpl implements TimeGridDragHandler {
     }
 
     if (
-      newStart.toString() <
-      addDays(this.dayBoundariesDateTime.start, currentDiff).toString()
+      newStart.epochNanoseconds <
+      (
+        addDays(
+          this.dayBoundariesDateTime.start,
+          currentDiff
+        ) as Temporal.ZonedDateTime
+      ).epochNanoseconds
     )
       return
     if (
-      newEnd.toString() >
-      addDays(this.dayBoundariesDateTime.end, currentDiff).toString()
+      newEnd.epochNanoseconds >
+      (
+        addDays(
+          this.dayBoundariesDateTime.end,
+          currentDiff
+        ) as Temporal.ZonedDateTime
+      ).epochNanoseconds
     )
       return
 
@@ -140,13 +152,13 @@ export default class TimeGridDragHandlerImpl implements TimeGridDragHandler {
     )
 
     if (
-      newStart.toString() <
-      (this.$app.calendarState.range.value as DateRange).start.toString()
+      newStart.epochNanoseconds <
+      (this.$app.calendarState.range.value as DateRange).start.epochNanoseconds
     )
       return
     if (
-      newEnd.toString() >
-      (this.$app.calendarState.range.value as DateRange).end.toString()
+      newEnd.epochNanoseconds >
+      (this.$app.calendarState.range.value as DateRange).end.epochNanoseconds
     )
       return
 

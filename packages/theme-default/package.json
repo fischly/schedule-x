@@ -1,9 +1,6 @@
 {
-  "name": "@fischly-x/theme-default",
-  "version": "3.0.2",
-  "publishConfig": {
-    "access": "public"
-  },
+  "name": "@schedule-x/theme-default",
+  "version": "3.1.2",
   "license": "MIT",
   "author": {
     "name": "Tom Österlund",

@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/drag-and-drop",
   "umdName": "SXDragAndDrop",
-  "version": "3.0.2",
+  "version": "3.1.2",
   "description": "Drag & drop plugin for Schedule-X calendar",
   "publishConfig": {
     "access": "public"

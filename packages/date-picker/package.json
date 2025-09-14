@@ -1,7 +1,7 @@
 {
   "name": "@fischly-x/date-picker",
   "umdName": "SXDatePicker",
-  "version": "3.0.2",
+  "version": "3.1.2",
   "description": "Schedule-X date picker component",
   "publishConfig": {
     "access": "public"
