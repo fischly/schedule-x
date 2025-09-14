@@ -1091,32 +1091,32 @@ const calendar = createCalendar({
     eventGrouping: {
       enabled: true,
       slotDurationMinutes: 120,
-      threshold: 2,
+      threshold: 1,
       enableEventCutting: true,
     },
     // eventWidth: 90,
   }
 })
-calendar._setCustomComponentFn('timeSlotEvent', (ele, props) => {
-  const s = <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', height: '100%' }}>
-    <div style={{
-      color: 'black',
-      border: '1px solid #aa0000',
-      background: 'rgba(255, 0, 0, 0.5)',
-      writingMode: 'vertical-rl',
-    }}>+ {props.slotData.collapsedEventCount} weitere</div>
-  </div>;
-  render(s, ele);
-});
+// calendar._setCustomComponentFn('timeSlotEvent', (ele, props) => {
+//   const s = <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', height: '100%' }}>
+//     <div style={{
+//       color: 'black',
+//       border: '1px solid #aa0000',
+//       background: 'rgba(255, 0, 0, 0.5)',
+//       writingMode: 'vertical-rl',
+//     }}>+ {props.slotData.collapsedEventCount} weitere</div>
+//   </div>;
+//   render(s, ele);
+// });
 
-calendar._setCustomComponentFn('timeGridEvent', (ele, props) => {
-  const s = <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', height: '100%' }}>
-    <div style={{
-    }}>{ props.calendarEvent._realStart?.toString()  }</div>
-    {console.log(props.calendarEvent)}
-  </div>;
-  render(s, ele);
-});
+// calendar._setCustomComponentFn('timeGridEvent', (ele, props) => {
+//   const s = <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', height: '100%' }}>
+//     <div style={{
+//     }}>{ props.calendarEvent._realStart?.toString()  }</div>
+//     {console.log(props.calendarEvent)}
+//   </div>;
+//   render(s, ele);
+// });
 
 calendar.render(calendarElement)
 
