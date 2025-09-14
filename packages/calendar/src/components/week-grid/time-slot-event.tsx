@@ -104,7 +104,8 @@ export default function TimeSlotEvent({
                         $app.config.dayBoundaries.value,
                         $app.config.timePointsPerDay
                     )}%`,
-                    width: '100%',
+                    width: `${$app.config.weekOptions.value.eventGrouping?.showMoreWidth || 10}%`,
+                    insetInlineStart: `${100 - ($app.config.weekOptions.value.eventGrouping?.showMoreWidth || 10)}%`,
                     padding: '0',
                 }}
             >
